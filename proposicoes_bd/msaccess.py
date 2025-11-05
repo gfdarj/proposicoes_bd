@@ -81,6 +81,19 @@ class conexao_msaccess:
         return cursor.fetchone()
 
 
+    def seleciona_formatado(self, numero_formatado):
+        """Seleciona um registro específico pelo número."""
+        cursor = self._con.cursor()
+        cursor.execute(
+            '''
+            SELECT numero, ementa, data_publicacao, autor, comissoes, tipo, numero_formatado, link
+            FROM projetos_de_lei WHERE numero_formatado = ?
+            ''',
+            (numero_formatado,)
+        )
+        return cursor.fetchone()
+
+
     def apaga(self, numero):
         """Apaga um registro específico."""
         cursor = self._con.cursor()
