@@ -1,0 +1,18 @@
+[project]
+name = "meu_pacote"
+version = "0.1.0"
+description = "Biblioteca de funções de banco de dados para acessar o banco ACCESS com as emendas das proposições."
+authors = [
+  { name="Gilberto Almeida", email="gfdarj@gmail.com" }
+]
+license = "DACP/ALERJ"
+readme = "README.md"
+requires-python = ">=3.14"
+
+dependencies = [
+  "pyodbc>=4.0.0"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
