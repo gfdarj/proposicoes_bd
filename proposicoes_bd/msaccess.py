@@ -1,7 +1,7 @@
 import pyodbc
 import os
 
-class ConexaoMSAccess:
+class conexao_msaccess:
     """
     Classe para conexão e operações básicas com um banco de dados Microsoft Access (.mdb ou .accdb).
     """

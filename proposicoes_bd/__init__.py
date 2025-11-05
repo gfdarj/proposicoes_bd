@@ -1,8 +1,4 @@
-from .strings import *
-from .datas import *
-#from .arquivos import *
-#from .numeros import *
-from .msaccess import ConexaoMSAccess
+from .msaccess import conexao_msaccess
 
-__all__ = ["ConexaoMSAccess"]
+__all__ = ["conexao_msaccess"]
 
