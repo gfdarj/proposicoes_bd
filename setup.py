@@ -10,7 +10,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/gfdarj/proposicoes_db",  # opcional
     packages=find_packages(),  # encontra automaticamente a subpasta proposicoes_db/
-    python_requires=">=3.13",
+    python_requires=">=3.13.0",
     install_requires=[
         "pyodbc>=4.0.0"
     ],
